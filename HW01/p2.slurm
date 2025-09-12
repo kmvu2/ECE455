@@ -6,6 +6,7 @@
 #SBATCH --output=compile_run.output
 
 cd $SLURM_SUBMIT_DIR
+module avail gcc
 module load gcc/13.2.0
 g++ main.cpp -o main
 ./main 
