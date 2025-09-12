@@ -6,6 +6,6 @@
 #SBATCH --output=compile_run.output
 
 cd $SLURM_SUBMIT_DIR
-module load gcc/14.3.0
+module load gcc/13.2.0
 g++ main.cpp -o main
 ./main 
