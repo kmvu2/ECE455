@@ -6,6 +6,6 @@
 #SBATCH --output=multicpu.output
 
 cd $SLURM_SUBMIT_DIR
-module load gcc/13.2.0
+module load gcc/14.3.0
 g++ -std=c++17 parallel.cpp -o parallel -pthread
 ./parallel
