@@ -1,9 +1,9 @@
-# include < iostream >
-# include < thread >
-# include < vector >
-# include < mutex >
-# include < atomic >
-# include < chrono >
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <mutex>
+#include <atomic>
+#include <chrono>
 constexpr int ITER = 100000; // number of iterations
 
 void inc_no_lock(int& counter) {

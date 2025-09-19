@@ -1,8 +1,8 @@
-# include <iostream>
-# include <vector>
-# include <thread>
-# include <random>
-# include <chrono>
+#include <iostream>
+#include <vector>
+#include <thread>
+#include <random>
+#include <chrono>
 
 // each thread: 1 row of A * all columns of B = 1 row of C
 
