@@ -43,7 +43,7 @@ int main () { // T*# iterations should be correct result
   { // No lock ( incorrect )
     int counter = 0 ;
     auto ms = run_and_time(T, [&]{ inc_no_lock(counter); }); // lambda function; can use either, but lambda saves coding time
-    std::cout << " [ No lock ] counter = " << counter
+    std::cout << " [No lock] counter = " << counter
               << " (expected " << expected << "), "
               << ms << " ms\n";
   }
@@ -61,7 +61,7 @@ int main () { // T*# iterations should be correct result
   std::atomic<int> counter{0};
   auto ms = run_and_time(T, [&]{ inc_atomic(counter); });
   std::cout << " [Atomic] counter = " << counter.load() // get counter variable, protected by hardware atomic; counter alone also works, but compiler will see it's an atomic variable and add .load() implicitly
-            << " (expected " << expected << " ), "
+            << " (expected " << expected << "), "
             << ms << " ms\n" ;
   }
   return 0 ;
