@@ -1,0 +1,6 @@
+Running CPU reference...
+Validating tiled version...
+Validation PASSED for both.
+Naive (global memory): 3.1212 ms
+Tiled (shared memory): 1.4111 ms
+Speedup: 2.2119x
