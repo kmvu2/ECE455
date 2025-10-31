@@ -7,5 +7,5 @@
 
 cd $SLURM_SUBMIT_DIR
 module load gcc 
-g++ -std=c++17 static_tasking.cpp -o static_tasking -I path/to/taskflow/ -pthread 
+g++ -std=c++17 static_tasking.cpp -o static_tasking -I "C:\Users\khmvu\OneDrive\Documents\School\UW-Madison\ECE 455\taskflow" -pthread 
 ./static_tasking

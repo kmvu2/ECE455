@@ -2,13 +2,13 @@
 
 int main() { 
   tf::Executor executor; 
-  tf::AsyncTaskA = executor.silent_dependent_async([](){
+  tf::AsyncTask A = executor.silent_dependent_async([](){
     printf("A\n");
   }); 
-  tf::AsyncTaskB = executor.silent_dependent_async([](){
+  tf::AsyncTask B = executor.silent_dependent_async([](){
     printf("B\n");
   }, A); 
-  tf::AsyncTaskC = executor.silent_dependent_async([](){
+  tf::AsyncTask C = executor.silent_dependent_async([](){
     printf("C\n");
   }, A); 
   auto [D, fuD] = executor.dependent_async([](){ printf("D\n");

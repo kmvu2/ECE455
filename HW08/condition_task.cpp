@@ -15,7 +15,7 @@ int main() {
     printf("Loop iteration %d\n", counter); 
     counter++; 
     return (counter < limit) ? 0 : 1; // 0 => go back, 1 => exit 
-  }).condition();
+  }).name("condition");
 
   auto done = taskflow.emplace([](){
     printf("Loop done.\n"); 
